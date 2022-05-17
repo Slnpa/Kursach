@@ -34,6 +34,9 @@ function initialize() {
         $("#future").click(() => {
             alert("Никаких:)")
         });
+        $("#future1").click(() => {
+            alert("Никаких:)")
+        });
     });
 
     $(document).ready(function() {
@@ -51,6 +54,13 @@ function initialize() {
             $(".tex").hide();
             $(".act").hide();
             $(".video").show();
+        });
+    });
+
+    $(document).ready(function() {
+        $('.menu-burger__header').click(function() {
+            $('.menu-burger__header').toggleClass('open-menu');
+            $('.header__nav').toggleClass('open-menu');
         });
     });
 }
